@@ -1,0 +1,14 @@
+repositories{    
+  jcenter()
+}
+
+dependencies {
+  compile 'com.android.support:support-v4:24.0.0'
+}
+
+android {
+  packagingOptions {
+    exclude 'META-INF/NOTICE'
+    exclude 'META-INF/LICENSE'
+  }
+}

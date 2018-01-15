@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-notification-checker" version="0.0.1">
+   <name>NotificationChecker</name>
+   <js-module name="NotificationChecker" src="www/NotificationChecker.js">
+      <clobbers target="cordova.plugins.NotificationChecker" />
+   </js-module>
+   <platform name="android">
+      <config-file parent="/*" target="res/xml/config.xml">
+         <feature name="NotificationChecker">
+            <param name="android-package" value="com.cga.NotificationChecker" />
+         </feature>
+      </config-file>
+      <config-file parent="/*" target="AndroidManifest.xml" />
+      <source-file src="src/android/NotificationChecker.java" target-dir="src/com/cga" />
+
+      <framework src="com.android.support:support-v4:24.0.0" />
+      <framework src="src/android/notifications.gradle" custom="true" type="gradleReference" />
+   </platform>
+</plugin>

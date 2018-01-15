@@ -1,0 +1,17 @@
+{
+  "name": "cordova-plugin-notification-checker",
+  "version": "0.1.0",
+  "description": "checking notifications enabled",
+  "cordova": {
+    "id": "cordova-plugin-notification-checker",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC"
+}
