@@ -13,3 +13,7 @@ To run the status checker:
 Notification.checkStatus(success, failure);
 ```
 
+To access the app settings
+```
+Notification.openSettings(success, failure);
+```

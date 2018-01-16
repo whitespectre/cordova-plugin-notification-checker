@@ -11,4 +11,13 @@ NotificationChecker.prototype.checkStatus = function(success, fail, options) {
     []);
 }
 
+NotificationChecker.prototype.openSettings = function(success, fail, options) {
+  return cordova.exec(
+    success, 
+    fail, 
+    "NotificationChecker", 
+    "openSettings",
+    []);
+}
+
 window.NotificationChecker = new NotificationChecker();
